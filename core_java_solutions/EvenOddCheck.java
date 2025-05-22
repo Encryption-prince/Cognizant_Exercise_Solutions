@@ -11,5 +11,6 @@ public class EvenOddCheck {
             System.out.println(n + " is Even.");
         else
             System.out.println(n + " is Odd.");
+        sc.close();
     }
 }
