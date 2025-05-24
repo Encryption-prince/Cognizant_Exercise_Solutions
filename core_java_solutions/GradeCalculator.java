@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class GradeCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("---Grade Calculator---");
         System.out.print("Enter your marks out of 100 : ");
         int grade = sc.nextInt();
         if (grade >= 90 && grade <= 100)
