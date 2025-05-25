@@ -7,6 +7,7 @@ public class NumberGuessGame {
         Scanner sc = new Scanner(System.in);
         System.out.println("---Welcome to Number Guessing Game---");
         System.out.println("Choose Difficulty Level : \n1.Easy\n2.Medium\n3.Hard");
+        System.out.print("Choice : ");
         int difficulty = sc.nextInt();
         int rnum = (int) (Math.random() * 100 + 1);
         System.out.println("Guess the number between 1-100");
@@ -24,7 +25,7 @@ public class NumberGuessGame {
                 System.out.println("You are Too Close");
             c++;
         } while (input != rnum);
-        System.out.println("Congrats you took " + c + " choice to guess right!!!");
+        System.out.println("Congrats you took " + (c + 1) + " choice to guess right!!!");
         sc.close();
     }
 }
